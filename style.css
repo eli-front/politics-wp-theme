@@ -179,3 +179,24 @@ textarea {
   }
 
 }
+
+
+/* Default display settings for the navigation elements */
+.wp-block-navigation__responsive-container-open:not(.always-shown) {
+  display: block !important;
+}
+
+.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+  display: none !important;
+}
+
+/* Adjust display settings at the new breakpoint */
+@media (min-width: 1050px) {
+  .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: none !important;
+  }
+
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+    display: block !important;
+  }
+}

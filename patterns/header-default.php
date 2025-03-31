@@ -17,7 +17,7 @@
       style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
       <!-- wp:site-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}}},"textColor":"secondary"} /-->
 
-      <!-- wp:site-tagline /-->
+      <!-- wp:site-tagline {"style":{"typography":{"fontSize":"14px"}}} /-->
     </div>
     <!-- /wp:group -->
 
