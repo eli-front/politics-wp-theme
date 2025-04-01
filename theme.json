@@ -318,10 +318,10 @@
             },
             "spacing": {
               "padding": {
-                "top": "14px",
-                "right": "29px",
-                "bottom": "14px",
-                "left": "29px"
+                "top": "10px",
+                "right": "16px",
+                "bottom": "10px",
+                "left": "16px"
               }
             }
           }
@@ -561,7 +561,10 @@
     "elements": {
       "button": {
         "border": {
-          "radius": "5px"
+          "radius": "5px",
+          "width": "1px",
+          "style": "solid",
+          "color": "var(--wp--preset--color--secondary)"
         },
         "color": {
           "background": "var(--wp--preset--color--secondary)",
