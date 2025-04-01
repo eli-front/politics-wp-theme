@@ -178,6 +178,55 @@ textarea {
     flex-direction: column-reverse;
   }
 
+
+  body.admin-bar .site-header {
+    top: 46px !important;
+  }
+
+}
+
+/* Header  */
+.site-header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
+  transition: background 0.3s;
+}
+
+/* Default state (top of page): white text for nav elements,
+   but NOT when a modal is open */
+/* Default state: white, but ONLY when not scrolled and no modal is open */
+html:not(.has-modal-open) .site-header:not(.scrolled) .wp-block-site-tagline,
+html:not(.has-modal-open) .site-header:not(.scrolled) .wp-block-navigation-item__label,
+html:not(.has-modal-open) .site-header:not(.scrolled) .wp-block-pages-list__item__link,
+html:not(.has-modal-open) .site-header:not(.scrolled) .wp-block-navigation__responsive-container-open {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+/* Scrolled state: black text (exclude site title and buttons) */
+.site-header.scrolled .wp-block-site-tagline,
+.site-header.scrolled .wp-block-navigation-item__label,
+.site-header.scrolled .wp-block-pages-list__item__link,
+.site-header.scrolled .wp-block-navigation__responsive-container-open {
+  color: black !important;
+}
+
+.site-header.scrolled {
+  background: white;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.admin-bar .site-header {
+  top: 32px;
+}
+
+
+/* Main */
+main {
+  /* padding-top: 100px !important; */
+  margin-top: 0px
 }
 
 
@@ -199,4 +248,23 @@ textarea {
   .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
     display: block !important;
   }
+}
+
+.iframe-wrapper {
+  max-width: 100%;
+  /* overflow: scroll; */
+  position: relative;
+  padding-top: 56.25%;
+  padding-bottom: 50px;
+  /* 16:9 ratio */
+  /* margin: 1rem 0; */
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
