@@ -120,3 +120,64 @@ function frost_register_block_pattern_categories()
 }
 
 add_action('init', 'frost_register_block_pattern_categories');
+
+// External News
+
+function create_external_news_cpt()
+{
+  $args = array(
+    'label'               => __('External News'),
+    'public'              => true,
+    'has_archive'         => true,
+    'show_in_rest'        => true,
+    'supports'            => array('title', 'editor', 'excerpt', 'custom-fields'),
+    'rewrite'             => array('slug' => 'external-news'),
+    'menu_icon'           => 'dashicons-rss',
+  );
+  register_post_type('external_news', $args);
+}
+add_action('init', 'create_external_news_cpt');
+
+function redirect_to_external_news_url()
+{
+  if (is_singular('external_news')) {
+    $url = get_post_meta(get_the_ID(), 'external_url', true);
+    if ($url) {
+      wp_redirect($url);
+      exit;
+    }
+  }
+}
+add_action('template_redirect', 'redirect_to_external_news_url');
+
+add_action('acf/init', 'register_acf_fields_for_external_news');
+function register_acf_fields_for_external_news()
+{
+  if (function_exists('acf_add_local_field_group')):
+
+    acf_add_local_field_group(array(
+      'key' => 'group_external_news_fields',
+      'title' => 'External News Fields',
+      'fields' => array(
+        array(
+          'key' => 'field_external_url',
+          'label' => 'External URL',
+          'name' => 'external_url',
+          'type' => 'url',
+          'instructions' => 'Paste the URL of the external article.',
+          'required' => 1,
+        ),
+      ),
+      'location' => array(
+        array(
+          array(
+            'param' => 'post_type',
+            'operator' => '==',
+            'value' => 'external_news',
+          ),
+        ),
+      ),
+    ));
+
+  endif;
+}

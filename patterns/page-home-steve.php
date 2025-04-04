@@ -30,8 +30,7 @@
     <!-- wp:button {"textColor":"base","className":"is-style-outline-background is-style-outline","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"fontSize":"small","borderColor":"base"} -->
     <div class="wp-block-button has-custom-font-size is-style-outline-background is-style-outline has-small-font-size">
       <a class="wp-block-button__link has-base-color has-text-color has-link-color has-border-color has-base-border-color wp-element-button"
-        href="#campaign-video">Watch the video</a>
-    </div>
+        href="#campaign-video">Watch the video</a></div>
     <!-- /wp:button -->
 
     <!-- wp:button {"fontSize":"small"} -->
@@ -77,6 +76,120 @@
           src="https://res.cloudinary.com/dp16vnnxw/video/upload/v1743476485/Steven_Roberts_Campaign_Video_FINAL_c89fyr.mov"></video>
       </figure>
       <!-- /wp:video -->
+    </div>
+    <!-- /wp:column -->
+  </div>
+  <!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","right":"30px","left":"30px"},"margin":{"top":"0"}}},"layout":{"type":"constrained","wideSize":"1200px"}} -->
+<div class="wp-block-group alignfull"
+  style="margin-top:0;padding-top:var(--wp--preset--spacing--x-large);padding-right:30px;padding-bottom:var(--wp--preset--spacing--x-large);padding-left:30px">
+  <!-- wp:group {"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group">
+    <!-- wp:heading {"textAlign":"center","className":"wp-block-heading","style":{"typography":{"letterSpacing":"-1px"}},"fontSize":"max-60"} -->
+    <h2 class="wp-block-heading has-text-align-center has-max-60-font-size" id="text-on-left-image-on-right"
+      style="letter-spacing:-1px">Making A Real Difference</h2>
+    <!-- /wp:heading -->
+
+    <!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.5"}}} -->
+    <p class="has-text-align-center" style="line-height:1.5">I was proud to secure more than <strong>$70
+        million</strong> in critical funding for St. Louis and the 5th Senatorial District during the 2023 legislative
+      session.</p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"0","left":"0"},"margin":{"top":"var:preset|spacing|medium"}}}} -->
+  <div class="wp-block-columns" style="margin-top:var(--wp--preset--spacing--medium)">
+    <!-- wp:column {"width":"25%","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|x-small"}},"backgroundColor":"neutral"} -->
+    <div class="wp-block-column has-neutral-background-color has-background"
+      style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small);flex-basis:25%">
+      <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1","fontStyle":"normal","fontWeight":"400"}},"fontSize":"max-60"} -->
+      <p class="has-max-60-font-size" style="font-style:normal;font-weight:400;line-height:1">01</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading {"level":3,"className":"wp-block-heading","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"small"} -->
+      <h3 class="wp-block-heading has-small-font-size" style="text-transform:uppercase">Career &amp; Workforce
+        Development</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.5"}},"fontSize":"small"} -->
+      <p class="has-small-font-size" style="line-height:1.5">Building futures through access, training, and opportunity
+        in tech and beyond.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph {"fontSize":"small"} -->
+      <p class="has-small-font-size"><a href="/vision-and-impact#career-and-workforce">Learn More →</a></p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:column -->
+
+    <!-- wp:column {"width":"25%","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|x-small"}},"backgroundColor":"primary","textColor":"base"} -->
+    <div class="wp-block-column has-base-color has-primary-background-color has-text-color has-background"
+      style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small);flex-basis:25%">
+      <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":"1"}},"fontSize":"max-60"} -->
+      <p class="has-max-60-font-size" style="font-style:normal;font-weight:400;line-height:1">02</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading {"level":3,"className":"wp-block-heading","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"small"} -->
+      <h3 class="wp-block-heading has-small-font-size" style="text-transform:uppercase">Community &amp; Equity</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.5"}},"fontSize":"small"} -->
+      <p class="has-small-font-size" style="line-height:1.5">Connecting neighborhoods and uplifting lives through
+        inclusive investments.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"fontSize":"small"} -->
+      <p class="has-link-color has-small-font-size"><a href="/vision-and-impact#community-and-equity">Learn More →</a>
+      </p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:column -->
+
+    <!-- wp:column {"width":"25%","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|x-small"}},"backgroundColor":"secondary","textColor":"base"} -->
+    <div class="wp-block-column has-base-color has-secondary-background-color has-text-color has-background"
+      style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small);flex-basis:25%">
+      <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":"1"}},"fontSize":"max-60"} -->
+      <p class="has-max-60-font-size" style="font-style:normal;font-weight:400;line-height:1">03</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading {"level":3,"className":"wp-block-heading","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"small"} -->
+      <h3 class="wp-block-heading has-small-font-size" style="text-transform:uppercase">Arts &amp; Culture</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.5"}},"fontSize":"small"} -->
+      <p class="has-small-font-size" style="line-height:1.5">Inspiring unity and expression through the transformative
+        power of art &amp; culture.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"fontSize":"small"} -->
+      <p class="has-link-color has-small-font-size"><a href="/vision-and-impact#arts-and-culture">Learn More →</a></p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:column -->
+
+    <!-- wp:column {"width":"25%","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|x-small"}},"backgroundColor":"contrast","textColor":"base"} -->
+    <div class="wp-block-column has-base-color has-contrast-background-color has-text-color has-background"
+      style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small);flex-basis:25%">
+      <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":"1"}},"fontSize":"max-60"} -->
+      <p class="has-max-60-font-size" style="font-style:normal;font-weight:400;line-height:1">04</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading {"level":3,"className":"wp-block-heading","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"small"} -->
+      <h3 class="wp-block-heading has-small-font-size" style="text-transform:uppercase">Health &amp; Housing</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.5"}},"fontSize":"small"} -->
+      <p class="has-small-font-size" style="line-height:1.5">Providing care, dignity, and stability to those who need it
+        most.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"fontSize":"small"} -->
+      <p class="has-link-color has-small-font-size"><a href="/vision-and-impact#health-and-housing">Learn More →</a></p>
+      <!-- /wp:paragraph -->
     </div>
     <!-- /wp:column -->
   </div>
