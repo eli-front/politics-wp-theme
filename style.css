@@ -268,3 +268,29 @@ main {
   display: block;
   max-width: 100%;
 }
+
+.impact-amount {
+  height: min-content !important;
+  width: 100% !important;
+  margin-top: auto !important;
+  position: absolute !important;
+  bottom: 5px !important;
+  right: 13px !important;
+}
+
+.impact-exceprt {
+  margin-bottom: auto !important;
+}
+
+.impact-card {
+  height: 270px;
+  position: relative;
+}
+
+
+.impact-ae-group {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

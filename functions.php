@@ -181,3 +181,59 @@ function register_acf_fields_for_external_news()
 
   endif;
 }
+
+// Impacts
+function create_impacts_cpt()
+{
+  $args = array(
+    'label'               => __('Impacts'),
+    'public'              => false, // Makes it not publicly accessible
+    'publicly_queryable'  => true, // Prevents individual pages
+    'show_ui'             => true,  // Still show in WP Admin
+    'show_in_rest'        => true,  // Enables block editor / REST API
+    'has_archive'         => false, // No archive page
+    'exclude_from_search' => true,  // Hide from search
+    'supports'            => array('title', 'editor', 'excerpt', 'custom-fields'),
+    'menu_icon'           => 'dashicons-rss',
+  );
+  register_post_type('impacts', $args);
+}
+add_action('init', 'create_impacts_cpt');
+
+add_action('acf/init', 'register_acf_fields_for_impacts');
+function register_acf_fields_for_impacts()
+{
+  if (function_exists('acf_add_local_field_group')):
+
+    acf_add_local_field_group(array(
+      'key' => 'group_impacts_fields',
+      'title' => 'Impacts Fields',
+      'fields' => array(
+        array(
+          'key' => 'field_amount',
+          'label' => 'Funding Amount',
+          'name' => 'impact_amount',
+          'type' => 'text',
+          'instructions' => 'Type the amount of funding such as "$20 million".',
+          'required' => 1,
+        ),
+      ),
+      'location' => array(
+        array(
+          array(
+            'param' => 'post_type',
+            'operator' => '==',
+            'value' => 'impacts',
+          ),
+        ),
+      ),
+    ));
+
+  endif;
+}
+
+
+// Donation Banner
+add_action('wp_footer', function () {
+  get_template_part('parts/donation-banner');
+});
